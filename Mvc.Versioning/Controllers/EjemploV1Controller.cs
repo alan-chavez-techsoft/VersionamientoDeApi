@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Mvc.Versioning.Controllers
 {
     [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/controller")]
+    [Route("api/ejemplo")]
     [ApiController]
     public class EjemploV1Controller : ControllerBase
     {
