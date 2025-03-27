@@ -25,8 +25,18 @@ namespace Fast.Versioning
                 o.AssumeDefaultVersionWhenUnspecified = true;
                 o.ApiVersionReader = new HeaderApiVersionReader("X-Api-Version");
             });
+
+
+            //builder.Services.SwaggerDocument(o => 
+            //{
+            //    o.Title = "FastEndpoints Versioning";
+            //    o.Version = "v1";
+            //    o.Description = "FastEndpoints Versioning";
+            //});
+
+
             //Se declaran las versiones de un endpoint o de un "proceso"
-            VersionSets.CreateApi("Ejemplo", v => v
+            VersionSets.CreateApi("ApiEjemplo", v => v
             .HasApiVersion(1.0)
             .HasApiVersion(2.0));
 

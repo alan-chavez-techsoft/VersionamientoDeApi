@@ -8,9 +8,10 @@ namespace FastEndpoints.Versioning.Endpoints
         {
             Get("api/ejemplo");
             AllowAnonymous();
-            //Aqui se le asigna la version y el "proceso" al endpoint
-            Options(x => x.WithVersionSet("Ejemplo")
+            Options(x => x.WithVersionSet("ApiEjemplo")
             .MapToApiVersion(1.0));
+            //Version(1);
+
         }
         public override async Task HandleAsync(CancellationToken ct)
         {
